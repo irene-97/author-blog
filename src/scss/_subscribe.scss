@@ -12,8 +12,13 @@
 	&__submit {
 		outline: none;
 		border: none;
+		border-radius: 4px;
 		padding: 9px 48px;
 		color: $color-white;
-		background: $color-picton-blue;
+		background: $color-shakespeare;
+
+		&:hover {
+			background: darken($color-shakespeare, 8%);
+		}
 	}
 }
