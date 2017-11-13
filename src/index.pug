@@ -1,6 +1,7 @@
 extends pug/base
 
-append vars
-	- html.classList.push('page-index')
+prepend vars
+	- title = 'Author | Blog'
 
 block content
+	include pug/includes/header
