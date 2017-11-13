@@ -1,4 +1,45 @@
-$sprites: ();
+$sprites: (
+	"fb": (
+		normal: (
+			x: 0,
+			y: 20,
+			width: 11,
+			height: 21,
+			image: "sprites.png",
+			total_width: 21,
+			total_height: 41,
+		),
+		retina: (
+			x: 0,
+			y: 40,
+			width: 22,
+			height: 42,
+			image: "sprites@2x.png",
+			total_width: 42,
+			total_height: 82,
+		),
+	),
+	"tw": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 21,
+			height: 18,
+			image: "sprites.png",
+			total_width: 21,
+			total_height: 41,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 42,
+			height: 36,
+			image: "sprites@2x.png",
+			total_width: 42,
+			total_height: 82,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

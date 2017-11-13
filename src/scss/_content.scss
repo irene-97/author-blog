@@ -1,0 +1,16 @@
+.content {
+	padding-top: 73px;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__main {
+		width: 831px;
+	}
+
+	&__sidebar {
+		width: 270px;
+	}
+}
