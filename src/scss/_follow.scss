@@ -1,0 +1,65 @@
+.follow {
+	margin-top: 61px;
+
+	&__links {
+		margin-top: 32px;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin-right: 15px;
+		border-radius: 50%;
+		width: 42px;
+		height: 42px;
+		transition: background 0.1s ease;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--fb {
+			background: $color-chambray;
+
+			&::before {
+				@include sprite("follow-fb");
+			}
+
+			&:hover {
+				background: darken($color-chambray, 10%);
+			}
+		}
+
+		&--tw {
+			background: $color-picton-blue;
+
+			&::before {
+				@include sprite("follow-tw");
+			}
+
+			&:hover {
+				background: darken($color-picton-blue, 10%);
+			}
+		}
+
+		&--gp {
+			background: $color-cinnabar;
+
+			&::before {
+				@include sprite("follow-gp");
+			}
+
+			&:hover {
+				background: darken($color-cinnabar, 10%);
+			}
+		}
+	}
+}
