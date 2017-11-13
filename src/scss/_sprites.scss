@@ -79,6 +79,46 @@ $sprites: (
 			total_height: 82,
 		),
 	),
+	"list-type-active": (
+		normal: (
+			x: 60,
+			y: 23,
+			width: 6,
+			height: 9,
+			image: "sprites.png",
+			total_width: 71,
+			total_height: 41,
+		),
+		retina: (
+			x: 120,
+			y: 46,
+			width: 12,
+			height: 18,
+			image: "sprites@2x.png",
+			total_width: 142,
+			total_height: 82,
+		),
+	),
+	"list-type": (
+		normal: (
+			x: 47,
+			y: 24,
+			width: 6,
+			height: 9,
+			image: "sprites.png",
+			total_width: 71,
+			total_height: 41,
+		),
+		retina: (
+			x: 94,
+			y: 48,
+			width: 12,
+			height: 18,
+			image: "sprites@2x.png",
+			total_width: 142,
+			total_height: 82,
+		),
+	),
 	"search": (
 		normal: (
 			x: 23,
