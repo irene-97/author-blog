@@ -20,6 +20,16 @@
 			color: $color-white;
 			background: $color-river-bed;
 		}
+
+		@media (max-width: 960px) {
+			width: 39px;
+			height: 39px;
+		}
+
+		@media (max-width: 590px) {
+			width: 35px;
+			height: 35px;
+		}
 	}
 
 	&__prev {
@@ -35,6 +45,10 @@
 			top: 50%;
 			display: block;
 			transform: translate(-50%, -50%);
+		}
+
+		@media (max-width: 960px) {
+			margin-right: 0;
 		}
 	}
 
@@ -52,6 +66,10 @@
 			display: block;
 			transform: translate(-50%, -50%);
 		}
+
+		@media (max-width: 960px) {
+			margin-left: 0;
+		}
 	}
 
 	&__page {
@@ -65,6 +83,14 @@
 			color: $color-white;
 			background: $color-river-bed;
 		}
+
+		@media (max-width: 960px) {
+			padding: 2px 6px;
+		}
+
+		@media (max-width: 590px) {
+			padding: 0 6px;
+		}
 	}
 
 	&__dots {
@@ -75,6 +101,10 @@
 			content: "....";
 			font-size: 24px;
 			color: $color-river-bed;
+		}
+
+		@media (max-width: 960px) {
+			margin: 0;
 		}
 	}
 }
