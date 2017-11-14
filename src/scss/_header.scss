@@ -2,6 +2,11 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 650px) {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 	&__logo {
@@ -30,6 +35,14 @@
 				border-bottom: solid 3px $color-shakespeare;
 				color: $color-shakespeare;
 				background: $color-athens-gray;
+			}
+
+			@media (max-width: 780px) {
+				padding: 36px 17px;
+			}
+
+			@media (max-width: 650px) {
+				padding: 10px 17px;
 			}
 		}
 	}
