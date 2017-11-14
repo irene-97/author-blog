@@ -1,0 +1,76 @@
+.pagenation {
+	display: flex;
+
+	&__prev,
+	&__next,
+	&__page {
+		display: inline-block;
+		border-radius: 50%;
+		width: 49px;
+		height: 49px;
+		text-decoration: none;
+		background: $color-athens-gray;
+		transition: background 0.1s ease;
+
+		&:hover {
+			color: $color-white;
+			background: $color-river-bed;
+		}
+	}
+
+	&__prev {
+		position: relative;
+		margin-right: 75px;
+
+		&::before {
+			@include sprite("arrow-left");
+
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			display: block;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__next {
+		position: relative;
+		margin-left: 75px;
+
+		&::before {
+			@include sprite("arrow-right");
+
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			display: block;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__page {
+		margin: 0 5px;
+		padding: 7px 6px;
+		font-size: 24px;
+		text-align: center;
+		color: $color-silver;
+
+		&--active {
+			color: $color-white;
+			background: $color-river-bed;
+		}
+	}
+
+	&__dots {
+		display: inline-block;
+		margin: 0 23px;
+
+		&::before {
+			content: "....";
+			font-size: 24px;
+			color: $color-river-bed;
+		}
+	}
+}
