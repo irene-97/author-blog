@@ -1,5 +1,9 @@
 .pagenation {
 	display: flex;
+	justify-content: space-between;
+
+	&__pages {
+	}
 
 	&__prev,
 	&__next,
