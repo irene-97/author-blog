@@ -3,6 +3,9 @@ extends pug/base
 prepend vars
 	- title = 'Author | Blog'
 
+append vars
+	- link.icon = 'favicon.ico'
+
 block content
 	include pug/includes/header
 	include pug/includes/banner
