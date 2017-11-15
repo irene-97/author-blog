@@ -46,5 +46,9 @@
 				padding: 10px 17px;
 			}
 		}
+
+		@media (max-width: 650px) {
+			display: block;
+		}
 	}
 }
